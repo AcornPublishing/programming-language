@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=euc-kr">
+		<meta name="generator" content="Adobe GoLive">
+		<title>PLP2E Code Samples</title>
+		<link href="../../Resources/base_style.css" rel="stylesheet" type="text/css" media="all">
+		<script type="text/javascript" src="../../Resources/tigra_tree_menu_pro.js"></script>
+		<script type="text/javascript">
+			function expandAll() {
+				for ( i=0; i<tree1.a_nodes.length; i++ )
+					if ( tree1.a_nodes[i].open ) tree1.a_nodes[i].open(false)
+			}
+			function collapseAll() {
+				for ( i=0; i<tree1.a_nodes.length; i++ )
+					if ( tree1.a_nodes[i].open ) tree1.a_nodes[i].open(true)
+			}
+		</script>
+		<script type="text/javascript" src="../../Resources/CSScriptLib.js"></script>
+		<script type="text/javascript"><!--
+var preloadFlag = true;
+// --></script>
+		
+	</head>
+
+	<body bgcolor="#ffffff">
+		<h1>코드 예제</h1>
+		<p>이 부분에는  <b><i>새로 보는 프로그래밍 언어</i></b>의 소스  코드 중 자명하지 않은 것들을 담았다</p>
+<ul>
+			<li>대부분의 경우 책의 코드가 완전히 실행 가능한 프로그램을 구성하지는 않기 때문에 코드를  확장해야 한다. 일반적으로 현재 다루는 기능을 설명하는 최소한의 프로그램을 생성하는 것이 목표다. 결과 프로그램이 항상 좋은 프로그래밍 스타일이지는 않다.
+  
+			<li>일부 경우(일반적으로 컴파일러 자체의 동작이  관심사인 경우) 예는 단일 모듈이며 실행 가능한 코드를 생성하지 않는다. 이러한 코드는 “-c” 명령행 스위치를 사용해서 컴파일해야 한다. <li>소스  파일명과 주석은 책에서 그에 대응되는 예, 그림, 연습문제를  나타낸다. 예, 연습문제,  그림 모두에 나온 코드는 예를 따라서 파일명을 정했다.
+			</ul>
+	<p>코드 예제는 장 별로 나눴다. 예제가 없는 장은 회색으로 나타냈다. 각 장의 내용을 보이거나 감추려면 책 아이콘을 클릭하면 된다. <br>
+           <b>하위 목차 열기</b> / <b>하위 목차 닫기</b> 버튼을 이용해서 전체를 보이거나 가릴 수 있다.</p>
+<p><a onClick="expandAll(); return true" onMouseOver="changeImages('button_expandall_1','../../Resources/buttons/expandall-2.gif');return true" onMouseOut="changeImages('button_expandall_1','../../Resources/buttons/expandall-1.gif');return true" href="#"><img id="button_expandall_1" src="../../Resources/buttons/expandall-1.gif" alt="" name="button_expandall_1" border="0" hspace="1" vspace="1"></a>
+		   <a onClick="collapseAll(); return true" onMouseOver="changeImages('button_collapseall_1','../../Resources/buttons/collapseall-2.gif');return true" onMouseOut="changeImages('button_collapseall_1','../../Resources/buttons/collapseall-1.gif');return true" href="#"><img id="button_collapseall_1" src="../../Resources/buttons/collapseall-1.gif" alt="" name="button_collapseall_1" border="0" hspace="1" vspace="1"></a>
+	    </p>
+
+	    <hr>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="5">
+			<tr>
+				<td>
+					<script type="text/javascript" src="index-menu.js"></script>
+					<script type="text/javascript"><!--
+	var tree1 = new tree (CODE_MENU_ITEMS,CODE_MENU_STYLE);
+	for ( i=0; i<tree1.a_children.length; i++ ) {
+		tree1.a_children[i].load();
+		tree1.a_children[i].state_lookup();
+	}
+//-->
+</script>
+				</td>
+			</tr>
+		</table>
+
+		<hr>
+		<p>모든 코드는 다음의 컴파일러와 해석기를 사용해서 테스트했다:</p>
+	<p class="compent_name">에이다</p>
+	<p class="compent_compiler">gnat 버전 3.13p, x86 레드햇 리눅스 2.4. <a href="http://www.gnat.com">www.gnat.com</a></p>
+		<p class="compent_name">awk</p>
+		<p class="compent_compiler">맥 OS X.4(다윈 8.2.0)에  들어있는 BSD 버전</p>
+	<p class="compent_name">bash</p>
+		<p class="compent_compiler">버전 2.05b.0(1), 맥 OS  X.4(다윈 8.2.0)</p>
+	<p class="compent_name">C, C++,오브젝티브 C</p>
+		<p class="compent_compiler"> gcc  버전 3.3 또는 4.0, 맥 OS X.4</p>
+	<p class="compent_name">C#</p>
+		<p class="compent_compiler">모노  버전 1.1.7 또는 1.1.8, 맥 OS X.4. <nobr><a href="http://www.mono-project.com/Main_Page">www.mono-project.com/Main_Page</a></nobr>에서 구할 수 있다(제네릭을 사용하는 프로그램을 mcs 대신 gmcs를 사용해서 컴파일해야 한다).</p>
+		<p class="compent_compiler">또는 </p>
+		<p class="compent_compiler">Portable  .net cscc 버전 0.6.12, 맥 OS X.4. <a href="http://www.dotgnu.org/pnet.html">www.dotgnu.org/pnet.html</a>에서 구할  수 있다</p>
+	<p class="compent_name">클루</p>
+	<p class="compent_compiler">pclu  버전 7.0, 레드햇 리눅스 2.4. <a href="ftp://ftp.lcs.mit.edu/pub/pclu">ftp://ftp.lcs.mit.edu/pub/pclu</a></p>
+	<p class="compent_name">elisp</p>
+		<p class="compent_compiler">이맥스  버전 22.0.50.1, 맥 OS X(다윈 7.9.0)</p>
+	<p class="compent_name">포트란</p>
+	<p class="compent_compiler">g77 버전 3.2.2, 레드햇 리눅스  2.4</p>
+	<p class="compent_compiler">또는<em> </em><br>
+    썬 f90 버전 5.0, 솔라리스 8</p>
+	<p class="compent_name">하스켈</p>
+	<p class="compent_compiler">hugs 2003년 11월  버전, x86 레드햇 리눅스 2.4</p>
+	<p class="compent_compiler">또는 <em> </em><br>
+	  2005년 3월 버전, 맥 OS X.4. <a href="http://www.haskell.org/hugs/">www.haskell.org/hugs/</a>에서 구할 수 있다. </p>
+	<p class="compent_name">아이콘</p>
+	<p class="compent_compiler"> 버전 9.4.2, 맥 OS X.4. <a href="http://www.cs.arizona.edu/icon">www.cs.arizona.edu/icon</a>에서 구할 수  있다.</p>
+	<p class="compent_name">자바</p>
+	<p class="compent_compiler">썬 JDK 1.5.0, 솔라리스 8  또는 맥 OS X.4</p>
+	<p class="compent_name">자바스크립트</p>
+	<p class="compent_compiler"> 애플  사파리 2.0 브라우저에 내장된 버전</p>
+	<p class="compent_name">ML</p>
+		<p class="compent_compiler"> 뉴  저지 표준 ML 버전 110.55, 맥 OS X.4</p>
+	<p class="compent_name">모듈라 2</p>
+		<p class="compent_compiler">Mocka  버전 9905, x86 레드햇 리눅스 2.4. <a href="http://www.info.uni-karlsruhe.de/~modula/">www.info.uni-karlsruhe.de/~modula/</a>에서  구할 수 있다.</p>
+	<p class="compent_name">파스칼</p>
+	<p class="compent_compiler">gpc  버전 3.3.2, 맥 OS X.4.  <a href="http://gnu-pascal.de/">gnu-pascal.de/</a> 에서 구할 수 있다.</p>
+	<p class="compent_name">펄</p>
+	<p class="compent_compiler">펄 버전 5.8.1 또는  5.8.5, 맥 OS X.4.</p>
+	<p class="compent_name">PHP</p>
+		<p class="compent_compiler">PHP  버전 4.3.10 또는 4.3.11, 아파치 1.3.33, 맥 OS X.4</p>
+	<p class="compent_name">프롤로그</p>
+	<p class="compent_compiler"> 공개  프롤로그 버전 1.1b10, 맥 OS 9.2.2(클래식). <a href="http://www.cs.tcd.ie/open-prolog/">www.cs.tcd.ie/open-prolog/</a>에서  구할 수 있다.</p>
+	<p class="compent_compiler">또는</p>
+	<p class="compent_compiler">    gprolog  버전 1.2.16, 맥 OS X.4. pauillac.inria.fr/~diaz/gnu-prolog/에서  구할 수 있다. </p>
+	<p class="compent_name">파이썬</p>
+	<p class="compent_compiler">파이썬  버전 2.3.3 또는 2.3.5, 맥 OS X.4</p>
+	<p class="compent_name">스킴</p>
+	<p class="compent_compiler">DrScheme  버전 207 또는 299, 맥 OS  X.4. <a href="http://download.plt-scheme.org/drscheme/">download.plt-scheme.org/drscheme/</a>에서 구할 수 있다.</p>
+	<p class="compent_name">sed</p>
+		<p class="compent_compiler">맥 OS X.4에 내장된 BSD 버전(다윈 8.2.0)</p>
+	<p class="compent_name">SR</p>
+		<p class="compent_compiler">버전 2.3.3, 레드햇 리눅스 2.6. <a href="http://www.cs.arizona.edu/sr">www.cs.arizona.edu/sr</a>에서 구할 수 있다.</p>
+	<p class="compent_name">루비</p>
+	<p class="compent_compiler"> 루비 1.6.8 또는 1.8.2, 맥  OS X.4</p>
+	<p class="compent_name">Tcl</p>
+		<p class="compent_compiler">tclsh 버전 8.4, 맥 OS X.4</p>
+	<p class="compent_name">XSLT</p>
+		<p class="compent_compiler">TestXSLT  버전 3.0, 맥 OS X.4. <a href="http://www.entropy.ch/software/macosx/">www.entropy.ch/software/macosx/</a>에서 구할 수 있다.</p>
+</body>
+
+</html>

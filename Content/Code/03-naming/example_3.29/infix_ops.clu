@@ -1,0 +1,32 @@
+% Example 3.29
+
+complex = cluster is new, add, print
+    rep = struct[r, i : real]
+
+    new = proc(x, y : real) returns(cvt)
+        return(rep${r:x, i:y})
+    end new
+
+    % add is a magic name associated with the operator +
+    add = proc(a, b : cvt) returns(cvt)
+        return(rep${r: a.r+b.r, i: a.i+b.i})
+    end add
+
+    print = proc(c : cvt)
+        po: stream := stream$primary_output()
+        stream$putc(po, '(');
+        stream$puts(po, real$unparse(c.r))
+        stream$puts(po, ", ");
+        stream$puts(po, real$unparse(c.i))
+        stream$puts(po, ")\n");
+    end print
+
+end complex
+
+start_up = proc()
+    x : complex := complex$new(1.0, 2.0)
+    y : complex := complex$new(3.0, 4.0)
+
+    % x+y means complex$add(x, y), because x and y are of type complex
+    complex$print(x+y)
+end start_up

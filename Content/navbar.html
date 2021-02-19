@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=euc-kr">
+		<meta name="generator" content="Adobe GoLive 6">
+		<title>PLP2E Companion CD Navigation Bar</title>
+		<link href="../Resources/base_style.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../Resources/CSScriptLib.js"></script>
+		<script type="text/javascript"><!--
+var preloadFlag = true;
+
+// --></script>
+		
+		<script type="text/javascript">
+			var selected_item=0;
+			img_info = [
+/*00*/				['button_home_0','../Resources/buttons/home-3.gif','../Resources/buttons/home-1.gif'],
+/*01*/				['button_home_1','../Resources/buttons/usingthiscd-3.gif','../Resources/buttons/usingthiscd-1.gif'],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+/* 9*/				['button_chapter','../Resources/buttons/chapters-3.gif','../Resources/buttons/chapters-1.gif'],
+/*10*/				['button_book_0','../Resources/buttons/cdsections-3.gif','../Resources/buttons/cdsections-1.gif'],
+/*11*/				['button_book_1','../Resources/buttons/exercises-3.gif','../Resources/buttons/exercises-1.gif'],
+/*12*/				['button_book_2','../Resources/buttons/explorations-3.gif','../Resources/buttons/explorations-1.gif'],
+/*13*/				[ ],
+/*14*/				[ ],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+/*20*/				['button_tute_0','../Resources/buttons/resources-3.gif','../Resources/buttons/resources-1.gif'],
+/*21*/				['button_tute_1','../Resources/buttons/codesamples-3.gif','../Resources/buttons/codesamples-1.gif'],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+                    [ ],
+/*29*/				[ ],
+/*30*/				['button_srch','../Resources/buttons/search-3.gif','../Resources/buttons/search-1.gif'],
+/*31*/				['button_webs','../Resources/buttons/companionsite-3.gif','../Resources/buttons/companionsite-1.gif']
+				];
+			function select_img(n) {
+				changeImages(img_info[selected_item][0],img_info[selected_item][2]);
+				selected_item = n;
+				changeImages(img_info[selected_item][0],img_info[selected_item][1]);
+				return true;
+			}
+		</script>
+	</head>
+
+	<body class="nomargins" onload="select_img(0); return true;">
+		<p class="sidebar">
+			<a onclick="return select_img(0)" onmouseover="if (selected_item!=0) changeImages('button_home_0','../Resources/buttons/home-2.gif');return true"        onmouseout="if (selected_item!=0) changeImages('button_home_0','../Resources/buttons/home-1.gif');return true"        href="home.html" target="Display"><img id="button_home_0" src="../Resources/buttons/home-1.gif" alt="" name="button_home_0" border="0" hspace="1" vspace="1"></a>
+		    <a onclick="return select_img(1)" onmouseover="if (selected_item!=1) changeImages('button_home_1','../Resources/buttons/usingthiscd-2.gif');return true" onmouseout="if (selected_item!=1) changeImages('button_home_1','../Resources/buttons/usingthiscd-1.gif');return true" href="introduction.html" target="Display"><img id="button_home_1" src="../Resources/buttons/usingthiscd-1.gif" alt="" name="button_home_1" border="0" hspace="1" vspace="1"></a>
+		</p>
+		<p></p>
+		<p class="sidebar">
+            <font size="+1"><b>상세 메뉴</b></font>
+			<a onclick="return select_img(9)" onmouseover="if (selected_item!=9) changeImages('button_chapter','../Resources/buttons/chapters-2.gif');return true"      onmouseout="if (selected_item!=10) changeImages('button_chapter','../Resources/buttons/chapters-1.gif');return true"      href="index.html"     target="Display"><img id="button_chapter" src="../Resources/buttons/chapters-1.gif" alt="" name="button_chapter" border="0" hspace="1" vspace="1"></a>
+			<a onclick="return select_img(10)" onmouseover="if (selected_item!=10) changeImages('button_book_0','../Resources/buttons/cdsections-2.gif');return true"      onmouseout="if (selected_item!=10) changeImages('button_book_0','../Resources/buttons/cdsections-1.gif');return true"      href="CDSections/index.html"     target="Display"><img id="button_book_0" src="../Resources/buttons/cdsections-1.gif" alt="" name="button_book_0" border="0" hspace="1" vspace="1"></a>
+			<a onclick="return select_img(11)" onmouseover="if (selected_item!=11) changeImages('button_book_1','../Resources/buttons/exercises-2.gif');return true"     onmouseout="if (selected_item!=11) changeImages('button_book_1','../Resources/buttons/exercises-1.gif');return true"     href="CDExercises/index.html" target="Display"><img id="button_book_1" src="../Resources/buttons/exercises-1.gif" alt="" name="button_book_1" border="0" hspace="1" vspace="1"></a>
+			<a onclick="return select_img(12)" onmouseover="if (selected_item!=12) changeImages('button_book_2','../Resources/buttons/explorations-2.gif');return true" onmouseout="if (selected_item!=12) changeImages('button_book_2','../Resources/buttons/explorations-1.gif');return true" href="CDExplorations/index.html"    target="Display"><img id="button_book_2" src="../Resources/buttons/explorations-1.gif" alt="" name="button_book_2" border="0" hspace="1" vspace="1"></a>
+		</p>
+		<p></p>
+		<p class="sidebar">
+			<a onclick="return select_img(20)" onmouseover="if (selected_item!=20) changeImages('button_tute_0','../Resources/buttons/resources-2.gif');return true" onmouseout="if (selected_item!=20) changeImages('button_tute_0','../Resources/buttons/resources-1.gif');return true" href="language_resources.html"       target="Display"><img id="button_tute_0" src="../Resources/buttons/resources-1.gif" alt="" name="button_tute_0" border="0" hspace="1" vspace="1"></a>
+			<a onclick="return select_img(21)" onmouseover="if (selected_item!=21) changeImages('button_tute_1','../Resources/buttons/codesamples-2.gif');return true" onmouseout="if (selected_item!=21) changeImages('button_tute_1','../Resources/buttons/codesamples-1.gif');return true" href="Code/index.html"       target="Display"><img id="button_tute_1" src="../Resources/buttons/codesamples-1.gif" alt="" name="button_tute_1" border="0" hspace="1" vspace="1"></a>
+		</p>
+		<p></p>
+		<p class="sidebar">
+			<a onclick="return select_img(30)" onmouseover="if (selected_item!=30) changeImages('button_srch','../Resources/buttons/search-2.gif');return true"        onmouseout="if (selected_item!=30) changeImages('button_srch','../Resources/buttons/search-1.gif');return true"        href="search.html"                                     target="Display"><img id="button_srch" src="../Resources/buttons/search-1.gif" alt="" name="button_srch" border="0" hspace="1" vspace="1"></a>
+			<a onclick="return select_img(31)" onmouseover="if (selected_item!=31) changeImages('button_webs','../Resources/buttons/companionsite-2.gif');return true" onmouseout="if (selected_item!=31) changeImages('button_webs','../Resources/buttons/companionsite-1.gif');return true" href="http://www.mkp.com/companions/0126339511"        target="Display"><img id="button_webs" src="../Resources/buttons/companionsite-1.gif" alt="" name="button_webs" border="0" hspace="1" vspace="1"></a>
+		</p>
+	</body>
+
+</html>

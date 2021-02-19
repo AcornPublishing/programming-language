@@ -1,0 +1,55 @@
+body              { color: black; font-size: 12pt; font-family: Arial, Helvetica, sans-serif; background-image: url("light-green-hessian-smudge.gif"); background-repeat: repeat; right: 300px; width: 650px }
+h1                 { color: #AFAF08; font-size: 24pt; font-family: Helvetica, Arial, sans-serif; font-weight: 900; text-align: center; margin-bottom: 12pt }
+h2                { color: #AFAF08; font-size: 18pt; font-family: Helvetica, Arial, sans-serif; font-weight: 800; margin-top: 24pt; margin-bottom: 6pt }
+h3                  { color: #afaf08; font-size: 16pt; font-family: Helvetica, Arial, sans-serif; font-weight: bold; margin-top: 16pt; margin-bottom: 3pt }
+h4                { color: #afaf08; font-size: 14pt; font-family: Helvetica, Arial, sans-serif; font-weight: bold; margin-top: 12pt; margin-bottom: 0pt }
+h5  { color: black; font-size: 13pt; font-family: Helvetica, Arial, sans-serif; font-weight: bold; margin-top: 8pt; margin-bottom: 0pt }
+h6  { color: black; font-size: 12pt; font-family: Helvetica, Arial, sans-serif; font-weight: bold; margin-top: 6pt; margin-bottom: 0pt }
+p               { color: black; margin-top: 0; margin-bottom: 6pt }
+
+li           { margin-top: 0pt }
+ul           { margin-top: 0pt }
+ol           { margin-top: 0pt }
+
+hr              { padding-right: 12pt; padding-left: 12pt }
+
+.preheading_rule   { margin-top: 30pt; margin-bottom: 12pt }
+.afterrule_heading { margin-top: 0 }
+.nomargins     { margin: 0; width: 120px }
+.sidebar        { background-color: #D0D080; text-align:center; margin: 3px; padding: 2px; width: 150px }
+
+.langent_name      { font-weight: bold; margin-top: 16pt; margin-left: 24pt }
+.langent_note      { font-style: italic; margin-top: -3pt; margin-bottom: 18pt; margin-left: 48pt }
+.langent_note_withsub  { font-style: italic; margin-top: -3pt; margin-bottom: 0pt; margin-left: 48pt }
+.langent_name_sub1  { font-weight: bold; margin-top: 0pt; margin-bottom: 0pt;  margin-left: 60pt }
+.langent_name_sub2  { font-weight: bold; margin-top: 0pt; margin-bottom: 18pt;  margin-left: 60pt }
+
+.compent_name  { font-weight: bold; margin-top: 12pt; margin-left: 24pt }
+.compent_compiler { margin-top: -3pt; margin-left: 36pt }
+
+.menuLeafLinked            { color: blue; text-decoration: underline; margin: 0; padding: 0; width: 600px; height: 20px }
+.menuLeafLinkedRollover    { color: blue; text-decoration: underline; background-color: red; margin: 0; padding: 0; width: 600px; height: 20px }
+.menuLeafNotLinked         { color: black; text-decoration: none; text-indent: 0; word-spacing: normal; letter-spacing: normal; margin: 0; padding: 0; width: 600px; height: 20px }
+.menuNodeLinked            { color: blue; font-style: italic; text-decoration: underline; margin: 0; padding: 0; width: 600px; height: 20px }
+.menuNodeLinkedRollover    { color: blue; font-style: italic; text-decoration: underline; background-color: red; margin: 0; padding: 0; width: 600px; height: 20px }
+.menuNodeNotLinked         { color: black; font-style: italic; text-decoration: none; text-indent: 0; word-spacing: normal; letter-spacing: normal; margin: 0; padding: 0; width: 600px; height: 20px }
+.menuRootLinked              { color: blue; font-weight: bold; text-decoration: underline; margin: 0; padding: 0; width: 600px; height: 20px }
+.menuRootLinkedRollover      { color: blue; font-weight: bold; text-decoration: underline; background-color: red; margin: 0; padding: 0; width: 600px; height: 20px }
+.menuRootNotLinked           { color: black; font-weight: bold; text-decoration: none; word-spacing: normal; letter-spacing: normal; margin: 0; padding: 0; width: 600px; height: 20px }
+.pointer                  { cursor: pointer }
+
+.menu2RootLinked           { color: black; font-weight: bold; text-decoration: none; word-spacing: normal; letter-spacing: normal; margin: 0; padding: 0; width: 600px; height: 20px }
+.menu2RootNotLinked        { color: gray; font-weight: bold; text-decoration: none; word-spacing: normal; letter-spacing: normal; margin: 0; padding: 0; width: 600px; height: 20px }
+
+	.highlight { background: #FFFF40; }
+	.searchheading { font-size: 130%; font-weight: bold; }
+	.summary { font-size: 80%; font-style: italic; } 
+	.results { font-size: 100%; }
+	.category { color: #999999; }
+	.description   { font-size: smaller; font-style: italic; margin-left: 12pt }
+	.context { font-size: 100%; }
+	.infoline  { color: #696969; font-size: 80%; font-style: normal; margin-left: 24pt }
+	.result_title { font-size: 100%; }
+
+.width400 { width: 400px; margin: 0; padding: 0 }
+.width60 { width: 60px }

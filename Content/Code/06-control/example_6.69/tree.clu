@@ -1,0 +1,52 @@
+% Figure 6.5 (Example 6.69)
+
+bin_tree = cluster is pre_order, print, new, build
+    node = record [left, right: bin_tree, val: int]
+    rep = variant [some: node, empty: null]
+
+    pre_order = iter(t: cvt) yields(int)
+        tagcase t
+            tag empty: return
+            tag some(n: node):
+                yield(n.val)
+                for i: int in pre_order(n.left) do
+                    yield(i)
+                end
+                for i: int in pre_order(n.right) do
+                    yield(i)
+                end
+        end
+    end pre_order
+
+    new = proc() returns(cvt)
+        return (rep$make_empty(nil))
+    end new
+
+    build = proc(l, r: bin_tree, v: int) returns(cvt)
+        return (rep$make_some(node${left: l, right: r, val: v}))
+    end build
+
+    print = proc(t: cvt)
+        output: stream := stream$primary_output()
+        tagcase t
+            tag empty:  % skip
+            tag some(n: node):
+                stream$putl(output, int$unparse(n.val))
+        end
+    end print
+
+end bin_tree
+
+start_up = proc()
+    a: bin_tree := bin_tree$build(bin_tree$new(), bin_tree$new(), 1)
+    c: bin_tree := bin_tree$build(bin_tree$new(), bin_tree$new(), 3)
+    d: bin_tree := bin_tree$build(bin_tree$new(), bin_tree$new(), 4)
+    b: bin_tree := bin_tree$build(c, d, 2)
+    e: bin_tree := bin_tree$build(a, b, 5)
+
+    output: stream := stream$primary_output()
+
+    for i: int in bin_tree$pre_order(e) do
+        stream$putl(output, int$unparse(i))
+    end
+end start_up

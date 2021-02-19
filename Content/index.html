@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=euc-kr">
+		<title>CD Section, Exercise, and Exploration Index</title>
+		<link href="../Resources/base_style.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="../Resources/tigra_tree_menu_pro.js"></script>
+		<script type="text/javascript">
+			function expandAll() {
+				for ( i=0; i<tree1.a_nodes.length; i++ )
+					if ( tree1.a_nodes[i].open ) tree1.a_nodes[i].open(false)
+			}
+			function collapseAll() {
+				for ( i=0; i<tree1.a_nodes.length; i++ )
+					if ( tree1.a_nodes[i].open ) tree1.a_nodes[i].open(true)
+			}
+		</script>
+		<script type="text/javascript" src="../Resources/CSScriptLib.js"></script>
+		<script type="text/javascript"><!--
+var preloadFlag = true;
+// --></script>
+		
+	</head>
+
+	<body link="black">
+		<h1>심화학습 탐색</h1>
+		<p>심화학습의 전체 목차를 보이거나 숨기려면 책 아이콘을 클릭하면 된다.<br>
+			<b>하위 목차 열기 / 하위 목차 닫기</b> 버튼을 사용해 모든 내용을 보이거나 숨길 수도 있다.<br>
+		</p>
+		<p><a onclick="expandAll(); return true" onmouseover="changeImages('button_expandall_1','../Resources/buttons/expandall-2.gif');return true" onmouseout="changeImages('button_expandall_1','../Resources/buttons/expandall-1.gif');return true" href="#"><img id="button_expandall_1" src="../Resources/buttons/expandall-1.gif" alt="" name="button_expandall_1" border="0" hspace="1" vspace="1"></a>
+		   <a onclick="collapseAll(); return true" onmouseover="changeImages('button_collapseall_1','../Resources/buttons/collapseall-2.gif');return true" onmouseout="changeImages('button_collapseall_1','../Resources/buttons/collapseall-1.gif');return true" href="#"><img id="button_collapseall_1" src="../Resources/buttons/collapseall-1.gif" alt="" name="button_collapseall_1" border="0" hspace="1" vspace="1"></a>
+	    </p>
+		<table width="100%" border="0" cellspacing="0" cellpadding="5">
+			<tr>
+				<td>
+					<script type="text/javascript" src="index-menu.js"></script>
+					<script type="text/javascript"><!--
+	var tree1 = new tree (BOOK_MENU_ITEMS,BOOK_MENU_STYLE);
+	for ( i=0; i<tree1.a_children.length; i++ ) {
+		tree1.a_children[i].load();
+		tree1.a_children[i].state_lookup();
+	}
+//-->
+</script>
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>
